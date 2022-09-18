@@ -24,7 +24,7 @@ async function searchSong() {
     if(track.has_lyrics){
 
         // get request for the song lyrics using track_Id and commontrack_Id returned by the previous fetch request
-        let lyricsURL = `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${trackID}&commontrack_id=${commonID}&apikey=5bb2cf1f5367960ebeba277d5dc4c958`
+        let lyricsURL = `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.lyrics.get?track_id=${trackID}&commontrack_id=${commonID}&apikey=5bb2cf1f5367960ebeba277d5dc4c958`
 
        await axios
         .get(lyricsURL)
