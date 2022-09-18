@@ -17,7 +17,6 @@ async function searchSong() {
         track = data.message.body.track_list[0].track
         trackID = track.track_id
         commonID = track.commontrack_id
-        console.log(trackID , commonID)
     } )
     .catch(err => console.log(`Error ${err}`))
 
@@ -31,7 +30,7 @@ async function searchSong() {
         .get(lyricsURL)
         .then(response => {
             lyrics = response.data.message.body.lyrics.lyrics_body
-            console.log('Lyrics printed')
+            // console.log('Lyrics printed')
             result.innerText = lyrics
         })
         } else {
