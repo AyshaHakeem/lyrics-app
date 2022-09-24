@@ -13,22 +13,34 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<div>
-			<label>
-				Title
-				<input type="text" class="title">
-			</label> <br>
-			<label>
-				Artist
-				<input type="text" class="artist">
-			</label>
-			 <button>Get Lyrics</button>
-			 <section class="result">
-				 <p class="lyricsBody"></p>	 
-			 </section>
-		 </div>
-		 <script type="text/javascript" src="https://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuOP"></script>
-		 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		 <script type="text/javascript" src="js/main.js"></script>
-	</body>
+		<header>
+		  <div class="search">
+			<h1>Get Lryics</h1>
+			<p class="hero-text">Search for lyrics from your favorite artist or search by song.</p>
+			<label for="artist">Artist name:</label>
+			<input type="text" id="artist" name="artist">
+			<label for="song">Song name:</label>
+			<input type="text" id="song" name="song">
+			<button class="get-lyrics">Get lyrics</button>
+		  </div>
+		  <button class="get-new">Get New Lyrics</button>
+		</header>
+		<main>
+	  
+		  <img src="" alt="">
+		  <section class="result">
+			<h2 class="result-title"></h2> <span></span>
+			<h3 class="result-artist"></h3>
+			<p class="lyrics-body"></p>
+		  </section>
+		</main>
+		<footer>
+		  
+		</footer>
+	  
+		<!-- JavaScript -->
+		<script type="text/javascript" src="https://tracking.musixmatch.com/t1.0/AMa6hJCIEzn1v8RuOP"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script type="text/javascript" src="./js/main.js"></script>
+	  </body>
 </html>
